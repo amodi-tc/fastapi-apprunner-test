@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-test"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "boto3 (>=1.40.16,<2.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "fastapi[standard] (>=0.116.1,<0.117.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.10"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
