@@ -1,9 +1,9 @@
 version: 1.0
-runtime: python313
+runtime: python311
 build:
   commands:
     build:
-      - pip install poetry
+      - pip3 install poetry
       - poetry install
 run: 
   command: poetry run uvicorn main:app --host 0.0.0.0 --port 8000
